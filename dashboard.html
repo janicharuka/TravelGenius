@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      /* Reset styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling */
+      body {
+        font-family: "Poppins", Arial, sans-serif;
+        background: url("images/hero.jpg") no-repeat center center/cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: relative;
+      }
+
+      /* Dark overlay on top of the background */
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(30, 30, 46, 0.8);
+        z-index: 0;
+      }
+
+      /* Header styling */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: relative;
+        z-index: 10;
+      }
+
+      .logo img {
+        max-width: 120px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      nav {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ff9de5;
+        text-shadow: 0px 0px 8px #ff79c6;
+      }
+
+      /* Main Content */
+      main {
+        flex-grow: 1;
+        padding: 2rem;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .welcome-text {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .welcome-text h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff7e79, #ff658c, #ffa6d0);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .card {
+        background: linear-gradient(145deg, #2a2a40, #1a1a27);
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6),
+          0 -4px 10px rgba(255, 105, 180, 0.3);
+        text-align: center;
+        color: #eaeaea;
+        transition: transform 0.3s ease, filter 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+      }
+
+      .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(90deg, #ff7e79, #ff658c, #ffa6d0);
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      .card p {
+        font-size: 1rem;
+        color: #ccc;
+      }
+
+      /* Footer styling */
+      footer {
+        background: rgba(20, 20, 30, 0.9);
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #999;
+        z-index: 10;
+        position: relative;
+      }
+
+      footer a {
+        color: #ff79c6;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: #ff9de5;
+        text-shadow: 0px 0px 8px #ff79c6;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.jpg" alt="Logo of Travel Website" />
+        </a>
+      </div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="logout.php">Logout</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="welcome-text">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your travel bookings, profile, and more!</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>View Bookings</h3>
+          <p>Check your current and past travel bookings.</p>
+        </div>
+        <div class="card">
+          <h3>Manage Profile</h3>
+          <p>Update your personal information and preferences.</p>
+        </div>
+        <div class="card">
+          <h3>Explore Destinations</h3>
+          <p>Find exciting destinations for your next trip.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2024 Your TravelGenius Website. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>

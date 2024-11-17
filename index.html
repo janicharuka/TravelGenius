@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Subtle dark theme changes */
+      body {
+        background-color: #121212; /* Darker background */
+        color: #e0e0e0; /* Lighter text color for contrast */
+      }
+
+      header {
+        background-color: #1c1c1c; /* Darker header background */
+      }
+
+      .hero {
+        background-image: url('images/hero.jpg'); /* Set hero image as background */
+        background-size: cover; /* Cover the entire hero section */
+        background-position: center; /* Center the image */
+        padding: 100px 20px; /* Add padding to the hero section */
+        text-align: center; /* Center the content */
+        color: white; /* Ensure text in hero section is white */
+      }
+
+      .hero-content h1,
+      .hero-content p {
+        color: #ffffff; /* Ensure text in hero section is white */
+      }
+
+      .hero-button {
+        background-color: #ff5722; /* Bright accent color */
+        color: #fff;
+      }
+
+      .destinations, .about, .contact {
+        background-color: #1f1f1f; /* Darker section backgrounds */
+        color: #e0e0e0; /* Light text */
+      }
+
+      .destination-item h3 {
+        color: #ff5722; /* Accent color for headings */
+      }
+
+      .team-member h4,
+      .contact-info a {
+        color: #ff5722; /* Accent color for team members and links */
+      }
+
+      footer {
+        background-color: #1a1a1a; /* Dark footer background */
+        color: #b0b0b0; /* Light footer text */
+      }
+
+      footer .social-icons a {
+        color: #b0b0b0; /* Light icons */
+      }
+
+      footer .social-icons a:hover {
+        color: #ff5722; /* Accent color on hover */
+      }
+
+      .form input,
+      .form textarea {
+        background-color: #333; /* Darker form input fields */
+        color: #fff; /* White text in form inputs */
+        border: 1px solid #555; /* Slightly lighter borders */
+      }
+
+      .form button {
+        background-color: #ff5722; /* Button color */
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#"><img src="images/logo.jpg" alt="logo" /></a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#activites">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to TravelGenius</h1>
+          <p>Discover amazing destinations.</p>
+          <a href="#" class="hero-button">joining</a>
+        </div>
+      </section>
+      <!-- Destinations -->
+      <section id="destinations" class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/destination-1.jpg" alt="" />
+            <h3>Sigiriya</h3>
+            <p>
+              Sigiriya or Sinhagiri is an ancient rock fortress located in the
+               northern Matale District near the town of Dambulla in the Central Province, Sri Lanka.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/destination-2.jpg" alt="" />
+            <h3>Horton Plains</h3>
+            <p>
+              At an altitude of 2,100 meters above sea level, Horton Plains spreads across over 3,169 hectares
+               of the highest tableland of the island. In view of the large number of endemic flora and fauna species,
+                Horton Plains was declared a UNESCO World Heritage Site on 30th July 2010.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/destination-3.jpg" alt="" />
+            <h3>The Nine Arch Bridge in Ella</h3>
+            <p>
+              The bridge is 300 feet long, 25 feet wide, and 80–100 feet high.
+               It's made of nine stone, brick, and cement spans.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="hotels" class="destinations">
+        <h2>Featured Hotels</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/hotel-1.jpg" alt="" />
+            <h3>Sunset Beach Hotel</h3>
+            <p>
+              Located in Mirissa, a few steps from Mirissa Beach, Sunset Beach Hotel provides accommodation with a garden, 
+              free private parking, a private beach area and a terrace.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/hotel-2.jpg" alt="" />
+            <h3>Ella Jungle Resort</h3>
+            <p>
+              Ella Junggle Resort nestled on the banks of the Kirindi Oya River and surrounded by wild jungles,
+               bubbling mountain streams, and abundant flora and fauna.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/hotel-3.jpg" alt="" />
+            <h3>Avani Bentota Resort And Spa</h3>
+            <p>
+              
+              A relaxing family-orientated west coast resort with just 75 rooms designed by Geoffrey Bawa, which still flaunts many original features.<br>
+               It’s squarely located on wide, sandy Bentota Beach, a popular destination for languid holidays with water sports and activities on tap. 
+
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="activites" class="destinations">
+        <h2>Featured Activities</h2>
+        <div class="destination-grid">
+          <div class="destination-item">
+            <img src="images/activity-1.jpg" alt="" />
+            <h3>Hiking Trails</h3>
+            <p>
+              Sri Lanka offers many hiking trails, including scenic trails in the central highlands,
+               trails in the Knuckles Mountain Range, and the Pekoe Trail.
+               A forest with trails that can be customized for different fitness levels and interests.
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/activity-2.jpg" alt="" />
+            <h3>Whale Watching in Mirissa</h3>
+            <p>
+              Set sail to the depths of the Indian Ocean on a smooth cruise, 
+              in search of the magnificent creatures that dwell beneath the surface of the azure waters.
+              Come to srilanaka mirissa
+            </p>
+          </div>
+          <div class="destination-item">
+            <img src="images/activity-3.jpg" alt="" />
+            <h3>Diving</h3>
+            <p>
+              Bathed in warm Indian Ocean currents, and with 1600 km of palm-fringed coastline, Sri Lanka is an amazing dive destination. 
+              The waters of Sri Lanka are home to an incredible range of marine creatures from massive blue whales all the way through to tiny nudibranch.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>
+          TravelGenius is a revolutionary travel recommendation system designed to simplify Sri Lankan trip planning.<br>
+           It provides personalized itineraries, comprehensive coverage, and a user-friendly platform
+        </p>
+        <!-- <div class="team-members">
+          <div class="team-member">
+            <img src="images/team-member-1.jpg" alt="" />
+            <h4>John Smith</h4>
+            <p>Founder & CEO</p>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member-2.jpg" alt="" />
+            <h4>Jane Doe</h4>
+            <p>Head of Operations</p>
+          </div>
+          <div class="team-member">
+            <img src="images/team-member-3.jpg" alt="" />
+            <h4>David Lee</h4>
+            <p>Marketing Director</p>
+          </div> -->
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+          <p>
+            If you have any questions or would like to book a trip, please fill
+            out the form below or contact us using the information provided.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>Galle Road,Galle
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:info@travelgenius.com"
+                >info@travelgenius.com</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i
+              ><a href="tel:077 777 7777">077 777 7777</a>
+            </li>
+          </ul>
+        </div>
+        <form action="#" class="form">
+          <div class="form-group">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Enter Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+      <footer>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="https://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+        <p>&copy; 2024 Your TravelGenius Website. All Rights Reserved.</p>
+      </footer>
+    </main>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/6558443b63.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
