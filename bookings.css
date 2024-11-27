@@ -1,0 +1,71 @@
+.bookings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    min-height: 100vh;
+    padding-top: 70px;
+    box-sizing: border-box;
+    
+}
+
+.bookings .welcome-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.bookings .welcome-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff7e79, #ff658c, #ffa6d0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.bookings table {
+    width: 80%;
+    max-width: 1000px;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.bookings th,
+.bookings td {
+    padding: 1rem;
+    text-align: center;
+    color: #eaeaea;
+    border: 1px solid #333;
+}
+
+.bookings th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.bookings tr:nth-child(even) {
+    background-color: #444;
+}
+
+.bookings tr:nth-child(odd) {
+    background-color: #555;
+}
+
+.bookings .manage-button {
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(45deg, #ff79c6, #ff6ec7, #ff9de5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bookings .manage-button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}

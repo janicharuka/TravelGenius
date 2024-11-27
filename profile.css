@@ -1,0 +1,105 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+    min-height: 100vh;
+}
+
+.profile-page .form-container {
+    background: linear-gradient(145deg, #2a2a40, #1a1a27);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6), 0 -4px 10px rgba(255, 105, 180, 0.3);
+    width: 90vw;
+    max-width: 400px;
+    color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-page .form-container h1 {
+    margin-bottom: 0rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ff7e79, #ff658c, #ffa6d0);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.profile-page .form-group {
+    width: 100%;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.profile-page .form-group input {
+    height: 60px;
+    width: 100%;
+    margin-bottom:0;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    font-size: inherit;
+    border: none;
+    border-radius: 8px;
+    background: #222232;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.profile-page .form-group input:focus {
+    border: 2px solid #ff79c6;
+    background: #2b2b45;
+}
+
+.profile-page button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #ff79c6, #ff6ec7, #ff9de5);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.profile-page button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.profile-page label {
+    margin: unset;
+    padding: 0;
+    padding-left: 10px;
+    height: 10px;
+}
+
+.profile-page p {
+    margin: 0;
+    color: #aaa;
+}
+
+.profile-page p a {
+    color: #ff79c6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.profile-page p a:hover {
+    color: #ff9de5;
+    text-shadow: 0px 0px 8px #ff79c6;
+}
