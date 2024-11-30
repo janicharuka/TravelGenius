@@ -3,12 +3,12 @@
     position: relative;
     height: 600px;
     overflow: hidden;
-    height: 100vh;
+    min-height: 100vh;
 }
 .hero img{
     /* position: absolute; */
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
@@ -109,7 +109,7 @@
     font-size: 2rem;
 }
 .contact{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
